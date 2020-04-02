@@ -3,11 +3,15 @@ import random
 
 pen = turtle.Pen()
 pen.shape("turtle")
-pen.color("green")
+
+colors = [ "red", "green", "blue", "orange", "black" ]
+
 
 def drawPolygon(sides, length):
     if (sides < 3):
         return
+
+    pen.color(random.choice(colors))
 
     for i in range(sides):
         pen.forward(length)
