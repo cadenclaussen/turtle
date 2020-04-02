@@ -3,7 +3,7 @@ import random
 
 pen = turtle.Pen()
 pen.shape("turtle")
-pen.color("red")
+pen.color("green")
 
 def drawPolygon(sides, length):
     if (sides < 3):
