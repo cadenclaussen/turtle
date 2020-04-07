@@ -15,7 +15,7 @@ def drawPolygon(sides, length):
 
     for i in range(sides):
         pen.forward(length)
-        pen.left(360 // sides);
+        pen.left(360 // sides)
 
 drawPolygon(3, 100)
 drawPolygon(4, 100)

@@ -1,4 +1,5 @@
 import turtle
+import random
 
 pen = turtle.Pen()
 pen.shape("turtle")
@@ -16,7 +17,7 @@ for i in range(8):
 
 
 pen.reset()
-pen.speed(0);
+pen.speed(0)
 pen.color(random.choice(colors))
 for i in range(50):
     pen.forward(i * 2)
@@ -26,7 +27,7 @@ for i in range(50):
 
 
 pen.reset()
-pen.speed(10);
+pen.speed(10)
 pen.color(random.choice(colors))
 for i in range(50):
     pen.forward(i * 10)
@@ -35,7 +36,7 @@ for i in range(50):
 
 
 pen.reset()
-pen.speed(15);
+pen.speed(15)
 pen.color(random.choice(colors))
 for i in range(500):
     pen.forward(i * 1.25)
@@ -44,7 +45,7 @@ for i in range(500):
 
 
 pen.reset()
-pen.speed(15);
+pen.speed(15)
 pen.color(random.choice(colors))
 for i in range(400):
     pen.circle(i + 10 * 1.1, 360)
@@ -52,7 +53,7 @@ for i in range(400):
 
 
 pen.reset()
-pen.speed(15);
+pen.speed(15)
 pen.color(random.choice(colors))
 for i in range(300):
     pen.circle(i + 10 * 1.2, 360)
@@ -60,7 +61,7 @@ for i in range(300):
 
 
 pen.reset()
-pen.speed(15);
+pen.speed(15)
 pen.color(random.choice(colors))
 for i in range(300):
     pen.circle((i * 1.5) + 10, 360)
@@ -69,22 +70,22 @@ for i in range(300):
 
 
 pen.reset()
-pen.speed(0);
+pen.speed(0)
 pen.color(random.choice(colors))
 sides = 6
 length = 200
 movement = 8
 loops = 360 // movement
 for i in range(loops):
-    pen.left(movement);
+    pen.left(movement)
     for side in range(sides):
-        pen.forward(length);
-        pen.left(360 / sides);
+        pen.forward(length)
+        pen.left(360 / sides)
 
 
 
 pen.reset()
-pen.speed(0);
+pen.speed(0)
 pen.color(random.choice(colors))
 sides = 6
 length = 10
@@ -95,5 +96,5 @@ for i in range(loops):
     length = length * 1.02
     movement = movement * 1.1
     for side in range(sides):
-        pen.forward(length);
-        pen.left(360 / sides);
+        pen.forward(length)
+        pen.left(360 / sides)
