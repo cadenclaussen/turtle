@@ -1,28 +1,38 @@
 import turtle
 import random
 
-pen = turtle.Pen()
-pen.shape("turtle")
+fillcolors = [ "red", "green", "blue", "orange", "yellow", "purple" ]
 
-colors = [ "red", "green", "blue", "orange", "black" ]
+screen = turtle.Screen()
+screen.bgcolor("black")
+
+pen = turtle.Pen()
+pen.hideturtle()
+pen.reset()
+pen.speed(0);
+pen.up()
 
 
 def drawPolygon(sides, length):
     if (sides < 3):
         return
 
-    pen.color(random.choice(colors))
+    pen.color("white", random.choice(fillcolors))
 
+    pen.down();
+    pen.begin_fill()
     for i in range(sides):
         pen.forward(length)
         pen.left(360 // sides)
+        pen.left(360 // sides);
+    pen.end_fill()
+    pen.up();
 
-drawPolygon(3, 100)
-drawPolygon(4, 100)
-drawPolygon(5, 100)
-drawPolygon(6, 100)
-drawPolygon(7, 100)
-drawPolygon(8, 100)
-drawPolygon(9, 100)
-drawPolygon(10, 100)
-input('Hit a key...')
+
+for i in range(1000):
+    pen.goto(random.randint(-450, 400), random.randint(-450, 400))
+    sides = random.randint(3, 12)
+    length = random.randint(10, 75)
+
+    if (sides != 7 and sides != 11):
+        drawPolygon(sides, length)
