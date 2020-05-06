@@ -1,4 +1,5 @@
 *.csv
+.vscode
 *.dat
 *.iml
 *.log
