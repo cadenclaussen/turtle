@@ -42,8 +42,7 @@ def getTotalCost(mealCost):
 # Since input() always returns a string, we should convert it
 # to a decimal floating point type so we can use it in math
 # equations.
-print('What did your meal cost? ')
-mealCost = input()
+mealCost = input('What did your meal cost? ')
 mealCost = float(mealCost)
 
 print()
