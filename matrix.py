@@ -64,7 +64,6 @@ def twinkleOnRandom(number, count):
 
 
         for pixel in pixels:
-            print(pixel)
             row = pixel[0]
             column = pixel[1]
             setOff(row, column)
